@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 //类上方配置的请求映射与方法上面配置的请求映射连接在一起，形成完整的请求映射路径
-@RequestMapping("/user")
+@RequestMapping("/User")
 public class UserController {
     //请求路径映射
     @RequestMapping("/save")
