@@ -27,9 +27,9 @@ public class UserController {
     //普通参数：请求参数名与形参名不同时，使用@RequestParam注解关联请求参数名称与形参名称之间的关系
     @RequestMapping("/commonParamDifferentName")
     @ResponseBody
-    public String commonParamDifferentName(@RequestParam("name") String userName , int age){
+    public String commonParamDifferentName(@RequestParam("name") String userName ,@RequestParam("age") int personage){
         System.out.println("普通参数传递 userName ==> "+userName);
-        System.out.println("普通参数传递 age ==> "+age);
+        System.out.println("普通参数传递 age ==> "+personage);
         return "{'module':'common param different name'}";
     }
 

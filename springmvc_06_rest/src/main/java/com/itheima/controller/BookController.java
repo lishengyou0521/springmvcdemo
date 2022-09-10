@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 //@ResponseBody配置在类上可以简化配置，表示设置当前每个方法的返回值都作为响应体
 //@ResponseBody
 @RestController     //使用@RestController注解替换@Controller与@ResponseBody注解，简化书写
-@RequestMapping("/books")
+@RequestMapping("books")
 public class BookController {
 
 //    @RequestMapping( method = RequestMethod.POST)
